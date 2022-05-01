@@ -13,10 +13,65 @@
         </div>
     </header>
     <main>
-        <div></div>
+        <div class="container"></div>
+        <h2 class="forms"> Заявка на тех.осмотр </h2>
+        <form>
+            <Fieldset>
+                <Legend>Пожалуйста опишите свой автомобиль</Legend>
+                    Марка автомобиля <input type="text" name="trademark" placeholder="введите марку авто">
+                <br>
+                <br>
+                Модель <input type="text" name="model" placeholder="введите марку" required="required">
+                <br>
+                <br>
+                Коробка передач
+                АКПП <input type="radio" name="gear" value="auto" checked>
+                МКПП <input type="radio" name="gear" value="hand" checked>
+                <br>
+                Необходимо проверить 
+                <br>
+                <input type="checkbox" name="type1" value="break"> Тормозная жидкость <br>
+                <input type="checkbox" name="type2" value="parall"> Сход/развал <br>
+                <input type="checkbox" name="type2" value="coolant"> Охлаждающая жидкость <br>
+                <input type="checkbox" name="type4" value="suspencion"> Подвеска <br>
+                <input type="checkbox" name="type5" value="oil"> Масло 
+                <br>
+                <br>
+                Какое масло заливать
+                <br>
+                <select name="ollist" id="">
+                    <option label=""></option>
+                    <option label="Motul">Motul</option>
+                    <option label="Shell">Shell</option>
+                    <option label="Castrol">Castrol</option>
+                    <option label="Oliena" disabled>Oleina</option>
+                </select>
+                <br>
+                Цвет покраски суппортов
+                <input type="color" list="colorlist" value="#cc0000">
+                <datalist id="colorlist">
+                    <option value="#ff0000">Красный</option>
+                    <option value="#080000">Черный</option>
+                    <option value="#0000ff">Синий</option>
+                    <option value="#ffffff">Белый</option>
+                    <option value="#cccccc">Серый</option>
+                </datalist>
+                <br>
+                <br>
+                Дата визита <br>
+                <input type="date" name="visit" value="2020-11-29" min="2020-11-28" max="2020-12-10">
+                <br>
+            <br>
+            Ваша почта <input type="email" name="mail"><br>
+            <br>
+            <input type="submit">
+            </Fieldset>
+         </form>
     </main>
-    <footer>
-        <div></div>
+        <footer class="footer">
+        <div class="footer-block"> 
+            <p class="footer-text">Skillfacktory</p>
+        </div>
     </footer>
 </body>
 </html>
